@@ -402,7 +402,7 @@ const TranscriptHistory: React.FC<TranscriptHistoryProps> = () => {
         <div 
           className={`group flex items-center gap-2 py-1.5 px-2 rounded-lg cursor-pointer transition-colors ${
             isSelected 
-              ? 'text-[#605BFF] font-medium bg-[#605BFF]/10' 
+              ? 'text-[#FF8E1C] font-medium bg-[#FF8E1C]/10' 
               : 'text-gray-700 hover:bg-gray-100'
           }`}
           onClick={() => {
@@ -418,7 +418,7 @@ const TranscriptHistory: React.FC<TranscriptHistoryProps> = () => {
         >
           {hasChildren ? (
             node.isExpanded ? (
-              <FolderOpen className="h-4 w-4 text-[#605BFF]" />
+              <FolderOpen className="h-4 w-4 text-[#FF8E1C]" />
             ) : (
               <Folder className="h-4 w-4 text-gray-500" />
             )
@@ -448,7 +448,7 @@ const TranscriptHistory: React.FC<TranscriptHistoryProps> = () => {
                    setRenameValue('');
                  }
                }}
-               className="text-sm flex-1 bg-white border border-blue-500 rounded px-1 focus:outline-none"
+               className="text-sm flex-1 bg-white border border-[#FF8E1C] rounded px-1 focus:outline-none"
                autoFocus
              />
            ) : (
@@ -605,7 +605,7 @@ const TranscriptHistory: React.FC<TranscriptHistoryProps> = () => {
               <span className="mr-4">
                 SAM Drive
               </span>
-              <button className="text-gray-400 hover:text-[#605BFF]">
+              <button className="text-gray-400 hover:text-[#FF8E1C]">
                 <RefreshCw className="w-5 h-5" />
               </button>
             </h1>
@@ -649,7 +649,7 @@ const TranscriptHistory: React.FC<TranscriptHistoryProps> = () => {
               )}
             </div>
             
-            <button className="flex items-center gap-2 px-3 py-2 text-white bg-[#605BFF] rounded-lg hover:bg-[#4B46CC] transition-colors">
+            <button className="flex items-center gap-2 px-3 py-2 text-white bg-[#FF8E1C] rounded-lg hover:bg-[#E67E0C] transition-colors">
               <Plus size={16} />
               <span className="text-sm font-medium">Add Transcript</span>
             </button>
@@ -667,10 +667,10 @@ const TranscriptHistory: React.FC<TranscriptHistoryProps> = () => {
           {isSidebarCollapsed ? (
             <div 
               onClick={() => setIsSidebarCollapsed(false)}
-              className="h-full bg-gradient-to-b from-[#605BFF]/10 to-[#605BFF]/5 hover:from-[#605BFF]/20 hover:to-[#605BFF]/10 cursor-pointer transition-all duration-300 flex flex-col items-center group py-4"
+              className="h-full bg-gradient-to-b from-[#FF8E1C]/10 to-[#FF8E1C]/5 hover:from-[#FF8E1C]/20 hover:to-[#FF8E1C]/10 cursor-pointer transition-all duration-300 flex flex-col items-center group py-4"
             >
-              <Expand size={20} className="text-[#605BFF] group-hover:text-[#5248FF] transition-colors mb-4" />
-              <div className="transform -rotate-90 text-sm font-medium text-[#605BFF] whitespace-nowrap group-hover:text-[#5248FF] flex-1 flex items-center justify-center">
+              <Expand size={20} className="text-[#FF8E1C] group-hover:text-[#E67E0C] transition-colors mb-4" />
+              <div className="transform -rotate-90 text-sm font-medium text-[#FF8E1C] whitespace-nowrap group-hover:text-[#E67E0C] flex-1 flex items-center justify-center">
                 Grouping
               </div>
             </div>
@@ -702,7 +702,7 @@ const TranscriptHistory: React.FC<TranscriptHistoryProps> = () => {
           {!isSidebarCollapsed && (
             <div
               className={`w-0.5 h-full cursor-col-resize z-20 ${
-                isDragging ? 'bg-[#605BFF]' : 'bg-gray-100 hover:bg-[#605BFF]'
+                isDragging ? 'bg-[#FF8E1C]' : 'bg-gray-100 hover:bg-[#FF8E1C]'
               } transition-colors flex-shrink-0`}
               onMouseDown={handleDragStart}
             />
@@ -718,7 +718,7 @@ const TranscriptHistory: React.FC<TranscriptHistoryProps> = () => {
                   onClick={() => setActiveTab('my-history')}
                   className={`flex items-center gap-2 px-3 py-1.5 rounded-lg transition-colors ${
                     activeTab === 'my-history'
-                      ? 'bg-white text-[#605BFF] shadow-sm'
+                      ? 'bg-white text-[#FF8E1C] shadow-sm'
                       : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
@@ -729,7 +729,7 @@ const TranscriptHistory: React.FC<TranscriptHistoryProps> = () => {
                   onClick={() => setActiveTab('shared')}
                   className={`flex items-center gap-2 px-3 py-1.5 rounded-lg transition-colors ${
                     activeTab === 'shared'
-                      ? 'bg-white text-[#605BFF] shadow-sm'
+                      ? 'bg-white text-[#FF8E1C] shadow-sm'
                       : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
@@ -759,13 +759,13 @@ const TranscriptHistory: React.FC<TranscriptHistoryProps> = () => {
                   <input
                     type="text"
                     placeholder="Search transcripts..."
-                    className="w-full pl-10 pr-4 py-1.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#605BFF] focus:border-transparent"
+                    className="w-full pl-10 pr-4 py-1.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF8E1C] focus:border-transparent"
                   />
                 </div>
               </div>
             
               {/* Search Button */}
-              <button className="px-4 py-1.5 text-sm font-medium bg-white text-[#605BFF] border border-[#605BFF] rounded-lg hover:bg-[#605BFF] hover:text-white transition-colors">
+              <button className="px-4 py-1.5 text-sm font-medium bg-white text-[#FF8E1C] border border-[#FF8E1C] rounded-lg hover:bg-[#FF8E1C] hover:text-white transition-colors">
                 Search
               </button>
             
@@ -834,7 +834,7 @@ const TranscriptHistory: React.FC<TranscriptHistoryProps> = () => {
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                         <button
                           onClick={() => handleReview(item.id)}
-                          className="px-3 py-1 bg-white text-[#605BFF] border border-[#605BFF] rounded-md hover:bg-[#605BFF] hover:text-white hover:shadow-md transform hover:scale-105 transition-all duration-200 text-sm"
+                          className="px-3 py-1 bg-white text-[#FF8E1C] border border-[#FF8E1C] rounded-md hover:bg-[#FF8E1C] hover:text-white hover:shadow-md transform hover:scale-105 transition-all duration-200 text-sm"
                         >
                           Review
                         </button>
@@ -875,7 +875,7 @@ const TranscriptHistory: React.FC<TranscriptHistoryProps> = () => {
                         onClick={() => setCurrentPage(pageNum)}
                         className={`px-3 py-1 rounded transition-colors ${
                           currentPage === pageNum
-                            ? 'text-[#605BFF] font-bold'
+                            ? 'text-[#FF8E1C] font-bold'
                             : 'text-gray-700 hover:bg-gray-100'
                         }`}
                       >
@@ -1005,7 +1005,7 @@ const TranscriptHistory: React.FC<TranscriptHistoryProps> = () => {
                 value={newFolderName}
                 onChange={(e) => setNewFolderName(e.target.value)}
                 placeholder="Enter folder name..."
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#605BFF] focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF8E1C] focus:border-transparent"
                 autoFocus
                 onKeyPress={(e) => {
                   if (e.key === 'Enter') {
@@ -1026,7 +1026,7 @@ const TranscriptHistory: React.FC<TranscriptHistoryProps> = () => {
               <button
                 onClick={handleSaveNewFolder}
                 disabled={!newFolderName.trim()}
-                className="px-4 py-2 bg-[#605BFF] text-white rounded-lg hover:bg-[#4F46E5] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                className="px-4 py-2 bg-[#FF8E1C] text-white rounded-lg hover:bg-[#E67E0C] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 Add Folder
               </button>

@@ -16,6 +16,7 @@ import {
   ThumbsUp
 } from 'lucide-react';
 import runningIcon from '../../assets/running.svg';
+import './IncomeGoals.css';
 
 interface CommissionTier {
   id: number;
@@ -48,6 +49,8 @@ const IncomeGoals: React.FC = () => {
   const totalOnTargetEarnings = totalGuaranteedIncome + totalOnTargetCommission;
   const desiredPersonalIncomeGap = desiredIncome - totalOnTargetEarnings;
   const hourlyRateTarget = totalGuaranteedIncome / totalWorkingHoursPerYear;
+  const SUPER_RATE = 0.11;
+  const superOnCommission = totalOnTargetCommission * SUPER_RATE;
   
   // Calculate additional sales needed
   const baseCommissionRate = commissionTiers.find(tier => tier.commissionPlan === 'Base Rate')?.commissionRate || 0;
@@ -281,18 +284,23 @@ const IncomeGoals: React.FC = () => {
                 {/* Superannuation */}
                 <div className="flex-1 sm:max-w-[350px]">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    <div className="flex items-center space-x-2">
-                      <span className={pensionType === 'superannuation' ? 'text-gray-900 font-medium' : 'text-gray-500'}>Superannuation</span>
-                      <label className="relative inline-flex items-center cursor-pointer">
+                    <div className="btn-container">
+                      <div className="btn-color-mode-switch">
                         <input
+                          value="1"
+                          id="pension_mode"
+                          name="pension_mode"
                           type="checkbox"
                           checked={pensionType === '401k'}
                           onChange={(e) => setPensionType(e.target.checked ? '401k' : 'superannuation')}
-                          className="sr-only peer"
                         />
-                        <div className="w-7 h-4 bg-[#605BFF] border border-gray-300 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-indigo-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-[#FF8E1C] peer-checked:border-gray-300"></div>
-                      </label>
-                      <span className={pensionType === '401k' ? 'text-gray-900 font-medium' : 'text-gray-500'}>401 (K)</span>
+                        <label
+                          className="btn-color-mode-switch-inner"
+                          data-off="Super"
+                          data-on="401(K)"
+                          htmlFor="pension_mode"
+                        />
+                      </div>
                     </div>
                   </label>
                   <div className="relative">
@@ -461,9 +469,23 @@ const IncomeGoals: React.FC = () => {
                           ${commissionTiers.reduce((sum, tier) => sum + tier.salesTarget, 0).toLocaleString()}
                         </td>
                         <td className="py-2 px-2 sm:py-3 sm:px-4"></td>
-                        <td className="py-2 px-2 sm:py-3 sm:px-4 font-semibold text-gray-900 text-center">Total On-Target Commission:</td>
+                        <td className="py-2 px-2 sm:py-3 sm:px-4 font-semibold text-gray-900 text-center">
+                          <div className="flex flex-col items-center space-y-1">
+                            <div className="w-max">
+                              <span>Total On-Target Commission:</span>
+                              {/* {pensionType === 'superannuation' && (
+                                <span className="block text-right text-[#FF8E1C]">Super (Commission):</span>
+                              )} */}
+                            </div>
+                          </div>
+                        </td>
                         <td className="py-2 px-2 sm:py-3 sm:px-4 font-semibold text-gray-900">
-                          ${totalOnTargetCommission.toLocaleString()}
+                          <div className="flex flex-col items-start space-y-1">
+                            <span>${totalOnTargetCommission.toLocaleString()}</span>
+                            {/* {pensionType === 'superannuation' && (
+                              <span>${Math.round(superOnCommission).toLocaleString()}</span>
+                            )} */}
+                          </div>
                         </td>
                       </tr>
                     </tbody>

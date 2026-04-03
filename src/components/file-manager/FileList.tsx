@@ -72,7 +72,7 @@ export function FileList({
   onManageAccess,
   onSort,
 }: FileListProps) {
-  const folderColors = ['blue', 'green', 'purple', 'orange', 'red', 'yellow'];
+  const folderColors = ['blue', 'green', 'purple', 'orange', 'red', 'yellow'] as const;
 
   // 根据category获取表头配置
   const getHeaderConfig = () => {

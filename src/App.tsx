@@ -62,13 +62,13 @@ const RoleSelectionPopup: React.FC<{
                   onClick={() => onSelect(role)}
                   className={`flex items-center p-3 rounded-lg border cursor-pointer transition-all duration-200 ${
                     isSelected
-                      ? 'bg-[#FF8E1C] bg-opacity-10 border-[#FF8E1C] text-[#FF8E1C]'
+                      ? 'bg-[#F5A623] bg-opacity-10 border-[#F5A623] text-[#F5A623]'
                       : 'bg-white border-gray-200 hover:border-gray-300 hover:bg-gray-50'
                   }`}
                 >
                   <span className="text-sm font-medium">{role}</span>
                   {isSelected && (
-                    <div className="ml-auto w-5 h-5 rounded-full bg-[#FF8E1C] flex items-center justify-center">
+                    <div className="ml-auto w-5 h-5 rounded-full bg-[#F5A623] flex items-center justify-center">
                       <div className="w-2 h-2 bg-white rounded-full"></div>
                     </div>
                   )}
@@ -83,7 +83,7 @@ const RoleSelectionPopup: React.FC<{
             disabled={!selectedRole}
             className={`w-full px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-200 ${
               selectedRole
-                ? 'text-[#FF8E1C] bg-white border border-[#FF8E1C] hover:bg-[#FF8E1C] hover:text-white'
+                ? 'text-[#F5A623] bg-white border border-[#F5A623] hover:bg-[#F5A623] hover:text-white'
                 : 'text-gray-400 bg-white border border-gray-200 cursor-not-allowed'
             }`}
           >
@@ -229,7 +229,7 @@ const AppContent: React.FC = () => {
         {/* Center - Feedback Message */}
         <div className="flex-1 text-center">
           <span className="text-gray-600 flex items-center justify-center gap-1">
-            We would <Heart className="w-4 h-4 text-[#FF8E1C] fill-current" /> to hear your feedback!
+            We would <Heart className="w-4 h-4 text-[#F5A623] fill-current" /> to hear your feedback!
           </span>
         </div>
         
@@ -333,7 +333,7 @@ const AppContent: React.FC = () => {
                   onMouseLeave={() => setHoveredItem(null)}
                   className={`w-full flex items-center ${isNavCollapsed ? 'justify-center px-2' : 'space-x-3 px-4'} py-3 rounded-lg text-left transition-colors whitespace-nowrap ${
                     activeView === 'onboarding'
-                      ? 'bg-[#FF8E1C] text-white'
+                      ? 'bg-[#F5A623] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -357,7 +357,7 @@ const AppContent: React.FC = () => {
                   onMouseLeave={() => setHoveredItem(null)}
                   className={`w-full flex items-center ${isNavCollapsed ? 'justify-center px-2' : 'space-x-3 px-4'} py-3 rounded-lg text-left transition-colors whitespace-nowrap ${
                     activeView === 'income-goals'
-                      ? 'bg-[#FF8E1C] text-white'
+                      ? 'bg-[#F5A623] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -380,7 +380,7 @@ const AppContent: React.FC = () => {
                   onMouseLeave={() => setHoveredItem(null)}
                   className={`w-full flex items-center ${isNavCollapsed ? 'justify-center px-2' : 'space-x-3 px-4'} py-3 rounded-lg text-left transition-colors whitespace-nowrap ${
                     activeView === 'dashboard'
-                      ? 'bg-[#FF8E1C] text-white'
+                      ? 'bg-[#F5A623] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -403,7 +403,7 @@ const AppContent: React.FC = () => {
                 onMouseLeave={() => setHoveredItem(null)}
                 className={`w-full flex items-center ${isNavCollapsed ? 'justify-center px-2' : 'space-x-3 px-4'} py-3 rounded-lg text-left transition-colors whitespace-nowrap ${
                   activeView === 'tasks'
-                    ? 'bg-[#FF8E1C] text-white'
+                    ? 'bg-[#F5A623] text-white'
                     : 'text-gray-700 hover:bg-gray-100'
                 }`}
               >
@@ -411,7 +411,7 @@ const AppContent: React.FC = () => {
                 {!isNavCollapsed && <span className="font-medium">Tasks</span>}
                 {/* 新增代码：任务计数气泡 */}
                 {!isNavCollapsed && (
-                  <span className="ml-auto min-w-[20px] px-2 py-0.5 text-xs font-semibold rounded-full bg-[#FF8E1C] text-white flex items-center justify-center">
+                  <span className="ml-auto min-w-[20px] px-2 py-0.5 text-xs font-semibold rounded-full bg-[#F5A623] text-white flex items-center justify-center">
                     3
                   </span>
                 )}
@@ -432,7 +432,7 @@ const AppContent: React.FC = () => {
                 onMouseLeave={() => setHoveredItem(null)}
                 className={`w-full flex items-center ${isNavCollapsed ? 'justify-center px-2' : 'space-x-3 px-4'} py-3 rounded-lg text-left transition-colors whitespace-nowrap ${
                   activeView === 'meeting-list'
-                    ? 'bg-[#FF8E1C] text-white'
+                    ? 'bg-[#F5A623] text-white'
                     : 'text-gray-700 hover:bg-gray-100'
                 }`}
               >
@@ -491,7 +491,7 @@ const AppContent: React.FC = () => {
                     onClick={() => setActiveView('hubspot-calls')}
                     className={`w-full flex items-center space-x-3 px-4 py-2 text-left transition-colors ${
                       activeView === 'hubspot-calls'
-                        ? 'bg-[#FF8E1C] text-white'
+                        ? 'bg-[#F5A623] text-white'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
@@ -502,7 +502,7 @@ const AppContent: React.FC = () => {
                     onClick={() => setActiveView('shared-calls')}
                     className={`w-full flex items-center space-x-3 px-4 py-2 text-left transition-colors ${
                       activeView === 'shared-calls'
-                        ? 'bg-[#FF8E1C] text-white'
+                        ? 'bg-[#F5A623] text-white'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
@@ -513,7 +513,7 @@ const AppContent: React.FC = () => {
                     onClick={() => setActiveView('calls-reports')}
                     className={`w-full flex items-center space-x-3 px-4 py-2 text-left transition-colors ${
                       activeView === 'calls-reports'
-                        ? 'bg-[#FF8E1C] text-white'
+                        ? 'bg-[#F5A623] text-white'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
@@ -530,7 +530,7 @@ const AppContent: React.FC = () => {
                     onClick={() => setActiveView('hubspot-calls')}
                     className={`w-full flex items-center space-x-3 px-4 py-2 rounded-lg text-left transition-colors whitespace-nowrap ${
                       activeView === 'hubspot-calls'
-                        ? 'bg-[#FF8E1C] text-white'
+                        ? 'bg-[#F5A623] text-white'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
@@ -542,7 +542,7 @@ const AppContent: React.FC = () => {
                     onClick={() => setActiveView('shared-calls')}
                     className={`w-full flex items-center space-x-3 px-4 py-2 rounded-lg text-left transition-colors whitespace-nowrap ${
                       activeView === 'shared-calls'
-                        ? 'bg-[#FF8E1C] text-white'
+                        ? 'bg-[#F5A623] text-white'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
@@ -554,7 +554,7 @@ const AppContent: React.FC = () => {
                     onClick={() => setActiveView('calls-reports')}
                     className={`w-full flex items-center space-x-3 px-4 py-2 rounded-lg text-left transition-colors ${
                       activeView === 'calls-reports'
-                        ? 'bg-[#FF8E1C] text-white'
+                        ? 'bg-[#F5A623] text-white'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
@@ -578,7 +578,7 @@ const AppContent: React.FC = () => {
                 onMouseLeave={() => setHoveredItem(null)}
                 className={`w-full flex items-center ${isNavCollapsed ? 'justify-center px-2' : 'space-x-3 px-4'} py-3 rounded-lg text-left transition-colors whitespace-nowrap ${
                   activeView === 'prep'
-                    ? 'bg-[#FF8E1C] text-white'
+                    ? 'bg-[#F5A623] text-white'
                     : 'text-gray-700 hover:bg-gray-100'
                 }`}
               >
@@ -601,7 +601,7 @@ const AppContent: React.FC = () => {
                 onMouseLeave={() => setHoveredItem(null)}
                 className={`w-full flex items-center ${isNavCollapsed ? 'justify-center px-2' : 'space-x-3 px-4'} py-3 rounded-lg text-left transition-colors whitespace-nowrap ${
                   activeView === 'meeting-intelligence'
-                    ? 'bg-[#FF8E1C] text-white'
+                    ? 'bg-[#F5A623] text-white'
                     : 'text-gray-700 hover:bg-gray-100'
                 }`}
               >
@@ -624,7 +624,7 @@ const AppContent: React.FC = () => {
                 onMouseLeave={() => setHoveredItem(null)}
                 className={`w-full flex items-center ${isNavCollapsed ? 'justify-center px-2' : 'space-x-3 px-4'} py-3 rounded-lg text-left transition-colors whitespace-nowrap ${
                   activeView === 'transcript'
-                    ? 'bg-[#FF8E1C] text-white'
+                    ? 'bg-[#F5A623] text-white'
                     : 'text-gray-700 hover:bg-gray-100'
                 }`}
               >
@@ -647,7 +647,7 @@ const AppContent: React.FC = () => {
                 onMouseLeave={() => setHoveredItem(null)}
                 className={`w-full flex items-center ${isNavCollapsed ? 'justify-center px-2' : 'space-x-3 px-4'} py-3 rounded-lg text-left transition-colors whitespace-nowrap ${
                   activeView === 'file-manager'
-                    ? 'bg-[#FF8E1C] text-white'
+                    ? 'bg-[#F5A623] text-white'
                     : 'text-gray-700 hover:bg-gray-100'
                 }`}
               >
@@ -670,7 +670,7 @@ const AppContent: React.FC = () => {
                 onMouseLeave={() => setHoveredItem(null)}
                 className={`w-full flex items-center ${isNavCollapsed ? 'justify-center px-2' : 'space-x-3 px-4'} py-3 rounded-lg text-left transition-colors whitespace-nowrap ${
                   activeView === 'knowledge-base'
-                    ? 'bg-[#FF8E1C] text-white'
+                    ? 'bg-[#F5A623] text-white'
                     : 'text-gray-700 hover:bg-gray-100'
                 }`}
               >
@@ -693,7 +693,7 @@ const AppContent: React.FC = () => {
                 onMouseLeave={() => setHoveredItem(null)}
                 className={`w-full flex items-center ${isNavCollapsed ? 'justify-center px-2' : 'space-x-3 px-4'} py-3 rounded-lg text-left transition-colors ${
                   activeView === 'integrations'
-                    ? 'bg-[#FF8E1C] text-white'
+                    ? 'bg-[#F5A623] text-white'
                     : 'text-gray-700 hover:bg-gray-100'
                 }`}
               >
@@ -753,7 +753,7 @@ const AppContent: React.FC = () => {
                     onClick={() => setActiveView('user')}
                     className={`w-full flex items-center space-x-3 px-4 py-2 text-left transition-colors ${
                       activeView === 'user'
-                        ? 'bg-[#FF8E1C] text-white'
+                        ? 'bg-[#F5A623] text-white'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
@@ -764,7 +764,7 @@ const AppContent: React.FC = () => {
                     onClick={() => setActiveView('billing')}
                     className={`w-full flex items-center space-x-3 px-4 py-2 text-left transition-colors ${
                       activeView === 'billing'
-                        ? 'bg-[#FF8E1C] text-white'
+                        ? 'bg-[#F5A623] text-white'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
@@ -775,7 +775,7 @@ const AppContent: React.FC = () => {
                     onClick={() => setActiveView('pricing')}
                     className={`w-full flex items-center space-x-3 px-4 py-2 text-left transition-colors ${
                       activeView === 'pricing'
-                        ? 'bg-[#FF8E1C] text-white'
+                        ? 'bg-[#F5A623] text-white'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
@@ -786,7 +786,7 @@ const AppContent: React.FC = () => {
                     onClick={() => setActiveView('solution')}
                     className={`w-full flex items-center space-x-3 px-4 py-2 text-left transition-colors ${
                       activeView === 'solution'
-                        ? 'bg-[#FF8E1C] text-white'
+                        ? 'bg-[#F5A623] text-white'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
@@ -803,7 +803,7 @@ const AppContent: React.FC = () => {
                     onClick={() => setActiveView('user')}
                     className={`w-full flex items-center space-x-3 px-4 py-2 rounded-lg text-left transition-colors whitespace-nowrap ${
                       activeView === 'user'
-                        ? 'bg-[#FF8E1C] text-white'
+                        ? 'bg-[#F5A623] text-white'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
@@ -815,7 +815,7 @@ const AppContent: React.FC = () => {
                     onClick={() => setActiveView('billing')}
                     className={`w-full flex items-center space-x-3 px-4 py-2 rounded-lg text-left transition-colors whitespace-nowrap ${
                       activeView === 'billing'
-                        ? 'bg-[#FF8E1C] text-white'
+                        ? 'bg-[#F5A623] text-white'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
@@ -827,7 +827,7 @@ const AppContent: React.FC = () => {
                     onClick={() => setActiveView('pricing')}
                     className={`w-full flex items-center space-x-3 px-4 py-2 text-left transition-colors ${
                       activeView === 'pricing'
-                        ? 'bg-[#FF8E1C] text-white'
+                        ? 'bg-[#F5A623] text-white'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
@@ -839,7 +839,7 @@ const AppContent: React.FC = () => {
                     onClick={() => setActiveView('solution')}
                     className={`w-full flex items-center space-x-3 px-4 py-2 rounded-lg text-left transition-colors whitespace-nowrap ${
                       activeView === 'solution'
-                        ? 'bg-[#FF8E1C] text-white'
+                        ? 'bg-[#F5A623] text-white'
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >

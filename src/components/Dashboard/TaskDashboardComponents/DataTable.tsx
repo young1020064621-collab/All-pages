@@ -43,7 +43,7 @@ export const DataTable: React.FC<DataTableProps> = ({
   const getMeetingTypeIcon = (type: string) => {
     switch (type) {
       case 'Internal':
-        return <Speech className="w-4 h-4 text-[#FF8E1C]" />;
+        return <Speech className="w-4 h-4 text-[#F5A623]" />;
       case 'External':
         return <Calendar className="w-4 h-4 text-[#605BFF]" />;
       default:

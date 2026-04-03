@@ -59,7 +59,7 @@ const BuyerQuestionsCard: React.FC<BuyerQuestionsCardProps> = ({ onDataClick }) 
                   className="h-1 rounded-full transition-all duration-300"
                   style={{ 
                     width: `${(item.score / 10) * 100}%`,
-                    backgroundColor: item.score < 4 ? 'red' : item.score >= 4 && item.score < 6 ? '#FF8E1C' : 'green'
+                    backgroundColor: item.score < 4 ? 'red' : item.score >= 4 && item.score < 6 ? '#F5A623' : 'green'
                   }}
                 ></div>
               </div>
@@ -67,7 +67,7 @@ const BuyerQuestionsCard: React.FC<BuyerQuestionsCardProps> = ({ onDataClick }) 
                 onClick={() => onDataClick('Buyer Questions', item.text, item.value)}
                 className="px-3 py-1 rounded-full text-sm font-medium hover:opacity-90 transition-opacity duration-200 flex-shrink-0"
                 style={{ 
-                  color: item.score < 4 ? 'red' : item.score >= 4 && item.score < 6 ? '#FF8E1C' : 'green'
+                  color: item.score < 4 ? 'red' : item.score >= 4 && item.score < 6 ? '#F5A623' : 'green'
                 }}
               >
                 {item.value}

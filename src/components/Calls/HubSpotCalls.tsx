@@ -378,7 +378,7 @@ const HubSpotCalls: React.FC = () => {
            <div className="relative">
               <button 
                 onClick={handleFilterClick}
-                className="flex items-center gap-2 px-3 py-1.5 text-[#FF8E1C] bg-white border border-[#FF8E1C] rounded-lg hover:bg-[#FF8E1C] hover:text-white transition-colors"
+                className="flex items-center gap-2 px-3 py-1.5 text-[#F5A623] bg-white border border-[#F5A623] rounded-lg hover:bg-[#F5A623] hover:text-white transition-colors"
               >
                 <Filter size={16} />
                 <span className="text-sm font-medium">Filter</span>
@@ -451,7 +451,7 @@ const HubSpotCalls: React.FC = () => {
                 <option value="salesforce">Salesforce Inc.</option>
               </select>
             </div>
-            <button className="flex items-center gap-2 px-3 py-1.5 text-[#FF8E1C] rounded-lg hover:bg-gray-100 transition-colors">
+            <button className="flex items-center gap-2 px-3 py-1.5 text-[#F5A623] rounded-lg hover:bg-gray-100 transition-colors">
               <Filter size={16} />
               <span className="text-sm font-medium">Filter</span>
             </button>
@@ -556,8 +556,8 @@ const HubSpotCalls: React.FC = () => {
                         <button 
                           className={`px-3 py-1 h-6 w-16 text-xs rounded-md transition-colors ${
                             call.isSubmitted 
-                              ? 'bg-[#FF8E1C] text-white hover:bg-orange-600' 
-                              : 'border border-[#FF8E1C] text-[#FF8E1C] hover:bg-[#FF8E1C] hover:text-white'
+                              ? 'bg-[#F5A623] text-white hover:bg-orange-600' 
+                              : 'border border-[#F5A623] text-[#F5A623] hover:bg-[#F5A623] hover:text-white'
                           }`}
                         >
                           {call.isSubmitted ? 'Review' : 'Submit'}

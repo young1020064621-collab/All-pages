@@ -84,7 +84,7 @@ const EmptyTranscriptTab: React.FC = () => {
           
           {/* Quality Message Inside Drop Area */}
           <div className="mt-8 p-4 bg-blue-50 rounded-lg flex items-center space-x-3">
-            <AlertTriangle className="w-5 h-5 text-[#FF8E1C] mt-0.5 flex-shrink-0" />
+            <AlertTriangle className="w-5 h-5 text-[#F5A623] mt-0.5 flex-shrink-0" />
             <p className="text-sm text-blue-800 whitespace-nowrap">
               The quality of the transcript directly affects the meeting summary, follow-up letter and coaching
             </p>

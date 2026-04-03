@@ -198,7 +198,7 @@ export function FileManagerHeader({
 
         <div className="flex space-x-2 items-center gap-2">
           {/* Filter */}
-          <Button variant="outline" size="sm" className="gap-2 flex items-center border border-[#FF8E1C] text-[#FF8E1C] bg-white hover:text-white Hover:bg-[#FF8E1C]">
+          <Button variant="outline" size="sm" className="gap-2 flex items-center border border-[#F5A623] text-[#F5A623] bg-white hover:text-white Hover:bg-[#F5A623]">
             <Filter className="h-4 w-4" />
             Filters
           </Button>

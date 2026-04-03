@@ -44,7 +44,7 @@ const MeetingInfoPopup: React.FC<MeetingInfoPopupProps> = ({
           <div className="flex flex-col gap-3">
             <button
               onClick={setShowExist}
-              className="w-full px-6 py-3 text-sm font-medium text-[#FF8E1C] bg-white border border-[#FF8E1C] hover:bg-[#FF8E1C] hover:text-white rounded-lg transition-all duration-200 shadow-sm"
+              className="w-full px-6 py-3 text-sm font-medium text-[#F5A623] bg-white border border-[#F5A623] hover:bg-[#F5A623] hover:text-white rounded-lg transition-all duration-200 shadow-sm"
             >
               Choose existing meeting
             </button>

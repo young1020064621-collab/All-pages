@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #F5A623;
+  --primary-hover: #D4910F;
+  --primary-light: #FEF9E7;
+}
+
 /* 全局滚动条样式 */
 ::-webkit-scrollbar {
   width: 8px;

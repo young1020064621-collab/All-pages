@@ -74,7 +74,7 @@ const SolutionsPage: React.FC = () => {
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="text-xl font-semibold text-gray-900">{solution.name}</h3>
                     <div className="flex gap-2">
-                      <button className="text-[#FF8E1C] hover:text-[#FF8E1C] p-1">
+                      <button className="text-[#F5A623] hover:text-[#F5A623] p-1">
                         <Edit3 size={16} />
                       </button>
                       <button className="text-red-600 hover:text-red-800 p-1">

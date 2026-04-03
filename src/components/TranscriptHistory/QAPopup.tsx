@@ -107,7 +107,7 @@ const QAPopup: React.FC<QAPopupProps> = ({
         <div className="px-6 py-4 bg-white flex-shrink-0">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Bot size={22} className="text-[#FF8E1C]" />
+              <Bot size={22} className="text-[#F5A623]" />
               <h3 className="text-lg font-semibold text-gray-900">
                 {isAIMode ? 'Ask SAM' : isAIResult ? 'Ask SAM' : "Sam's Response"}
               </h3>
@@ -141,7 +141,7 @@ const QAPopup: React.FC<QAPopupProps> = ({
                         setSelectedClient(e.target.value);
                         setSelectedDeal(''); // Reset deal selection when client changes
                       }}
-                      className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#FF8E1C]/20 focus:border-[#FF8E1C] transition-all duration-200 appearance-none bg-white"
+                      className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#F5A623]/20 focus:border-[#F5A623] transition-all duration-200 appearance-none bg-white"
                     >
                       <option value="">Choose a client...</option>
                       {clients.map((client) => (
@@ -164,7 +164,7 @@ const QAPopup: React.FC<QAPopupProps> = ({
                       value={selectedDeal}
                       onChange={(e) => setSelectedDeal(e.target.value)}
                       disabled={!selectedClient}
-                      className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#FF8E1C]/20 focus:border-[#FF8E1C] transition-all duration-200 appearance-none bg-white disabled:bg-gray-50 disabled:cursor-not-allowed"
+                      className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#F5A623]/20 focus:border-[#F5A623] transition-all duration-200 appearance-none bg-white disabled:bg-gray-50 disabled:cursor-not-allowed"
                     >
                       <option value="">
                         {selectedClient ? 'Choose a deal...' : 'Select a client first'}
@@ -189,7 +189,7 @@ const QAPopup: React.FC<QAPopupProps> = ({
                       value={aiQuestion}
                       onChange={(e) => setAiQuestion(e.target.value)}
                       placeholder="Ask anything about the selected client and deal..."
-                      className="w-full px-4 py-3 pr-12 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#FF8E1C]/20 focus:border-[#FF8E1C] transition-all duration-200 resize-none"
+                      className="w-full px-4 py-3 pr-12 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#F5A623]/20 focus:border-[#F5A623] transition-all duration-200 resize-none"
                       rows={4}
                     />
                     <button
@@ -197,7 +197,7 @@ const QAPopup: React.FC<QAPopupProps> = ({
                       className={`absolute right-3 top-3 p-1.5 rounded-md transition-all duration-200 ${
                         isListening
                           ? 'text-red-500 bg-red-50 hover:bg-red-100'
-                          : 'text-gray-400 hover:text-[#FF8E1C] hover:bg-gray-100'
+                          : 'text-gray-400 hover:text-[#F5A623] hover:bg-gray-100'
                       }`}
                       title={isListening ? 'Stop recording' : 'Voice input'}
                     >
@@ -218,7 +218,7 @@ const QAPopup: React.FC<QAPopupProps> = ({
                 <div>
                   <h4 className="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
                     <div className="w-6 h-6 flex items-center justify-center">
-                      <span className={`font-bold text-xs ${isAIResult ? 'text-[#FF8E1C]' : 'text-blue-600'}`}>Q</span>
+                      <span className={`font-bold text-xs ${isAIResult ? 'text-[#F5A623]' : 'text-blue-600'}`}>Q</span>
                     </div>
                     Your Question
                   </h4>
@@ -231,7 +231,7 @@ const QAPopup: React.FC<QAPopupProps> = ({
                 <div>
                   <h4 className="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
                     <div className="w-6 h-6 flex items-center justify-center">
-                      <span className={`font-bold text-xs ${isAIResult ? 'text-[#FF8E1C]' : 'text-green-600'}`}>A</span>
+                      <span className={`font-bold text-xs ${isAIResult ? 'text-[#F5A623]' : 'text-green-600'}`}>A</span>
                     </div>
                     {isAIResult ? 'SAM Says' : "Sam's Answer"}
                   </h4>
@@ -264,14 +264,14 @@ const QAPopup: React.FC<QAPopupProps> = ({
             {isAIResult && showNoteInput && (
               <div>
                 <h4 className="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
-                  <FileText size={16} className="text-[#FF8E1C]" />
+                  <FileText size={16} className="text-[#F5A623]" />
                   Add Note
                 </h4>
                 <textarea
                   value={note}
                   onChange={(e) => setNote(e.target.value)}
                   placeholder="Write your notes here..."
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#FF8E1C]/20 focus:border-[#FF8E1C] transition-all duration-200 resize-none"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#F5A623]/20 focus:border-[#F5A623] transition-all duration-200 resize-none"
                   rows={4}
                   autoFocus
                 />
@@ -299,7 +299,7 @@ const QAPopup: React.FC<QAPopupProps> = ({
                 disabled={!selectedClient || !selectedDeal || !aiQuestion.trim()}
                 className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 flex items-center gap-2 ${
                   selectedClient && selectedDeal && aiQuestion.trim()
-                    ? 'text-[#FF8E1C]  bg-white border border-[#FF8E1C] hover:bg-[#FF8E1C] hover:text-white'
+                    ? 'text-[#F5A623]  bg-white border border-[#F5A623] hover:bg-[#F5A623] hover:text-white'
                     : 'text-gray-400 bg-gray-100 cursor-not-allowed'
                 }`}
               >
@@ -310,7 +310,7 @@ const QAPopup: React.FC<QAPopupProps> = ({
               <>
                 <button
                   onClick={() => setShowNoteInput(true)}
-                  className="px-4 py-2 text-sm font-medium text-[#FF8E1C] bg-white border border-[#FF8E1C] hover:bg-[#FF8E1C] hover:text-white rounded-lg transition-all duration-200 flex items-center gap-2"
+                  className="px-4 py-2 text-sm font-medium text-[#F5A623] bg-white border border-[#F5A623] hover:bg-[#F5A623] hover:text-white rounded-lg transition-all duration-200 flex items-center gap-2"
                 >
                   <FileText size={16} />
                   Add Note
@@ -327,14 +327,14 @@ const QAPopup: React.FC<QAPopupProps> = ({
               <>
                 <button
                   onClick={() => setShowNoteInput(true)}
-                  className="px-4 py-2 text-sm font-medium text-[#FF8E1C] bg-white border border-[#FF8E1C] hover:bg-[#FF8E1C] hover:text-white rounded-lg transition-all duration-200 flex items-center gap-2"
+                  className="px-4 py-2 text-sm font-medium text-[#F5A623] bg-white border border-[#F5A623] hover:bg-[#F5A623] hover:text-white rounded-lg transition-all duration-200 flex items-center gap-2"
                 >
                   <FileText size={16} />
                   Add Note
                 </button>
                 <button
                   onClick={handleSaveToHistory}
-                  className="px-4 py-2 text-sm font-medium text-white bg-[#FF8E1C] hover:bg-[#E67E0C] rounded-lg transition-all duration-200 flex items-center gap-2"
+                  className="px-4 py-2 text-sm font-medium text-white bg-[#F5A623] hover:bg-[#E67E0C] rounded-lg transition-all duration-200 flex items-center gap-2"
                 >
                   <Save size={16} />
                   Save to History
@@ -346,7 +346,7 @@ const QAPopup: React.FC<QAPopupProps> = ({
                 disabled={!note.trim()}
                 className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 flex items-center gap-2 ${
                   note.trim()
-                    ? `text-white ${isAIResult ? 'bg-[#FF8E1C] hover:bg-[#E67E0C]' : 'bg-[#605BFF] hover:bg-[#4F46E5]'}`
+                    ? `text-white ${isAIResult ? 'bg-[#F5A623] hover:bg-[#E67E0C]' : 'bg-[#605BFF] hover:bg-[#4F46E5]'}`
                     : 'text-gray-400 bg-gray-100 cursor-not-allowed'
                 }`}
               >

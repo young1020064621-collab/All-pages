@@ -697,7 +697,7 @@ const IFSDashboard: React.FC = () => {
               </div>
               <div className="relative">
                 <button 
-                  className="flex items-center space-x-2 px-3 py-1 text-[#FF8E1C] rounded-lg hover:bg-gray-100 transition-colors"
+                  className="flex items-center space-x-2 px-3 py-1 text-[#F5A623] rounded-lg hover:bg-gray-100 transition-colors"
                   onClick={handleMeetingsFilterClick}
                 >
                   <Filter className="w-4 h-4" />
@@ -766,7 +766,7 @@ const IFSDashboard: React.FC = () => {
               </div>
               <div className="relative">
                 <button 
-                  className="flex items-center space-x-2 px-3 py-1 text-[#FF8E1C] rounded-lg hover:bg-gray-100 transition-colors"
+                  className="flex items-center space-x-2 px-3 py-1 text-[#F5A623] rounded-lg hover:bg-gray-100 transition-colors"
                   onClick={handleCoachingFilterClick}
                 >
                   <Filter className="w-4 h-4" />

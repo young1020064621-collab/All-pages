@@ -23,7 +23,7 @@ const EmptyAskSamTab: React.FC<AskSamTabProps> = ({ onUploadClick }) => {
         
         <button 
           onClick={onUploadClick}
-          className="inline-flex items-center space-x-2 px-4 py-2 bg-[#FF8E1C] text-white rounded-lg hover:bg-[#4B46CC] transition-colors"
+          className="inline-flex items-center space-x-2 px-4 py-2 bg-[#F5A623] text-white rounded-lg hover:bg-[#4B46CC] transition-colors"
         >
           <Upload className="w-4 h-4" />
           <span>Upload Transcript</span>

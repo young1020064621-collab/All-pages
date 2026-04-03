@@ -98,7 +98,7 @@ const QuickMeetingPopup: React.FC<QuickMeetingPopupProps> = ({
           <div className="flex gap-3">
             <button
               onClick={onPrepareMeeting}
-              className="flex-1 px-4 py-2.5 text-sm font-medium text-[#FF8E1C] bg-white border border-[#FF8E1C] hover:bg-[#FF8E1C] hover:text-white rounded-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2"
+              className="flex-1 px-4 py-2.5 text-sm font-medium text-[#F5A623] bg-white border border-[#F5A623] hover:bg-[#F5A623] hover:text-white rounded-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2"
             >
               <BookOpenCheck size={16} />
               Prepare

@@ -195,7 +195,7 @@ export function FileManagerSidebar({
     { id: 'customers', name: 'Customers', icon: <Users className="h-4 w-4 text-[#4A3AFF]" /> },
     { id: 'share-with-me', name: 'Shared with me', icon: <Share2 className="h-4 w-4 text-[#FF8C00]" /> },
     { id: 'email', name: 'Email', icon: <Mail className="h-4 w-4 text-[#666]" /> },
-    { id: 'deal', name: 'Deals', icon: <Handshake className="h-4 w-4 text-[#FF8E1C]" /> },
+    { id: 'deal', name: 'Deals', icon: <Handshake className="h-4 w-4 text-[#F5A623]" /> },
     { id: 'proposals', name: 'Proposals & Quotes', icon: <Gem className="h-4 w-4 text-[#FF9C41]" /> },
     { id: 'contract', name: 'Contract Management', icon: <FileSignature className="h-4 w-4 text-[#605BFF]" /> },
     { id: 'personal', name: 'Personal Files', icon: <User className="h-4 w-4 text-[#999]" /> },

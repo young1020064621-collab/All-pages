@@ -149,7 +149,7 @@ const MeetingDetailsPopup: React.FC<MeetingDetailsPopupProps> = ({
                   <p className="text-sm text-gray-700">{meetingData.clientCompany}</p>
                   <button
                     onClick={() => setShowEditCompany(true)}
-                    className="p-1 text-[#FF8E1C] hover:bg-orange-50 rounded transition-all duration-200"
+                    className="p-1 text-[#F5A623] hover:bg-orange-50 rounded transition-all duration-200"
                     title="Edit Company"
                   >
                     <Pencil size={16} />
@@ -164,7 +164,7 @@ const MeetingDetailsPopup: React.FC<MeetingDetailsPopupProps> = ({
                   <p className="text-sm text-gray-700">{meetingData.deal}</p>
                   <button
                     onClick={() => setShowEditDeal(true)}
-                    className="p-1 text-[#FF8E1C] hover:bg-orange-50 rounded transition-all duration-200"
+                    className="p-1 text-[#F5A623] hover:bg-orange-50 rounded transition-all duration-200"
                     title="Edit Deal"
                   >
                     <Pencil size={16} />
@@ -195,7 +195,7 @@ const MeetingDetailsPopup: React.FC<MeetingDetailsPopupProps> = ({
                             setSelectedContactId(attendee.id);
                             setShowEditContact(true);
                           }}
-                          className="p-1 text-[#FF8E1C] hover:bg-orange-50 rounded transition-all duration-200"
+                          className="p-1 text-[#F5A623] hover:bg-orange-50 rounded transition-all duration-200"
                           title={`Edit ${attendee.name}`}
                         >
                           <Pencil size={16} />
@@ -264,7 +264,7 @@ const MeetingDetailsPopup: React.FC<MeetingDetailsPopupProps> = ({
                 </button>
                 <button
                   onClick={onPrepareMeeting}
-                  className="flex-1 px-3 py-2.5 text-sm font-medium text-[#FF8E1C] bg-white border border-[#FF8E1C] hover:bg-[#FF8E1C] hover:text-white rounded-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2"
+                  className="flex-1 px-3 py-2.5 text-sm font-medium text-[#F5A623] bg-white border border-[#F5A623] hover:bg-[#F5A623] hover:text-white rounded-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2"
                 >
                   <BookOpenCheck size={16} />
                   Prepare

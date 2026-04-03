@@ -245,7 +245,7 @@ const QualificationEffectivenessTab: React.FC = () => {
                 onClick={() => toggleSection(section.id)}
               >
                 <div className="flex items-center space-x-4">
-                  <div className="text-[#FF8E1C]">
+                  <div className="text-[#F5A623]">
                     {section.icon}
                   </div>
                   <div>
@@ -326,7 +326,7 @@ const QualificationEffectivenessTab: React.FC = () => {
           onClick={() => setExpandedConsequences(!expandedConsequences)}
         >
           <div className="flex items-center space-x-4">
-            <div className="text-[#FF8E1C]">
+            <div className="text-[#F5A623]">
               {/* Space */}
             </div>
             <div>
@@ -414,7 +414,7 @@ const QualificationEffectivenessTab: React.FC = () => {
           onClick={() => setExpandedRecommendations(!expandedRecommendations)}
         >
           <div className="flex items-center space-x-4">
-            <div className="text-[#FF8E1C]">
+            <div className="text-[#F5A623]">
               {/* Space */}
             </div>
             <div>

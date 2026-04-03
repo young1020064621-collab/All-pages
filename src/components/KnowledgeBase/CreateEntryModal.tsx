@@ -256,7 +256,7 @@ export function CreateEntryModal({ isOpen, onClose, type }: CreateEntryModalProp
               <button
                 type="button"
                 onClick={handleAIGenerate}
-                className="flex items-center px-2 py-2 bg-white text-[#FF8E1C] rounded-lg hover:bg-[#FF8E1C] hover:text-white transition-colors"
+                className="flex items-center px-2 py-2 bg-white text-[#F5A623] rounded-lg hover:bg-[#F5A623] hover:text-white transition-colors"
               >
                 <Sparkles className="h-5 w-5 mr-2" />
               </button>
@@ -393,7 +393,7 @@ export function CreateEntryModal({ isOpen, onClose, type }: CreateEntryModalProp
                             setCurrentAnswerIndex(index);
                             setShowBotPopup(true);
                           }}
-                          className="absolute top-2 right-2 p-1 text-[#FF8E1C] hover:bg-gray-100 transition-colors"
+                          className="absolute top-2 right-2 p-1 text-[#F5A623] hover:bg-gray-100 transition-colors"
                           title="Generate AI Response"
                         >
                           <Bot className="h-5 w-5" />

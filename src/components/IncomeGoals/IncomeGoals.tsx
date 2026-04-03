@@ -222,7 +222,7 @@ const IncomeGoals: React.FC = () => {
                       </div>
                       {/* 等号 */}
                       <div className="hidden sm:flex items-center justify-center" style={{height: '40px'}}>
-                        <span className="text-2xl font-bold text-[#FF8E1C]">=</span>
+                        <span className="text-2xl font-bold text-[#F5A623]">=</span>
                       </div>
                     </div>
                   </div>
@@ -335,7 +335,7 @@ const IncomeGoals: React.FC = () => {
                 </div>
                 {/* 等于号 */}
                 <div className="hidden sm:flex items-center justify-center" style={{marginTop: '28px'}}>
-                  <span className="text-2xl font-bold text-[#FF8E1C]">=</span>
+                  <span className="text-2xl font-bold text-[#F5A623]">=</span>
                 </div>
               </div>
             </div>
@@ -474,7 +474,7 @@ const IncomeGoals: React.FC = () => {
                             <div className="w-max">
                               <span>Total On-Target Commission:</span>
                               {/* {pensionType === 'superannuation' && (
-                                <span className="block text-right text-[#FF8E1C]">Super (Commission):</span>
+                                <span className="block text-right text-[#F5A623]">Super (Commission):</span>
                               )} */}
                             </div>
                           </div>
@@ -502,7 +502,7 @@ const IncomeGoals: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 flex-1 items-center">
                 {/* Total Amount */}
                 <div className="flex flex-col">
-                  <div className="flex items-center justify-center sm:justify-end p-3 bg-white border-4 border-[#FF8E1C]/20 rounded-md w-full sm:w-60 h-32">
+                  <div className="flex items-center justify-center sm:justify-end p-3 bg-white border-4 border-[#F5A623]/20 rounded-md w-full sm:w-60 h-32">
                     <div className="text-center sm:text-right">
                       <h3 className="text-sm font-semibold text-gray-900">Total On-Target Earnings</h3>
                       <span className="block text-[10px] font-medium text-gray-500 mb-1">

@@ -289,14 +289,14 @@ const Pricing: React.FC = () => {
             {/* Free Plan - Current Plan */}
             <div className="relative bg-white rounded-2xl shadow-sm border-2 border-gray-200 transition-all duration-200 hover:shadow-lg hover:-translate-y-1">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <span className="text-white px-4 py-1 rounded-full text-xs font-semibold shadow-lg bg-[#FF8E1C]">
+                <span className="text-white px-4 py-1 rounded-full text-xs font-semibold shadow-lg bg-[#F5A623]">
                   Current Plan
                 </span>
               </div>
               
               <div className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="p-2 rounded-lg bg-[#FF8E1C]">
+                  <div className="p-2 rounded-lg bg-[#F5A623]">
                     <div className="text-white">
                       {null}
                     </div>

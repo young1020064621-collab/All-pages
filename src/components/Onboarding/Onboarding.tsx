@@ -66,7 +66,7 @@ const Onboarding: React.FC = () => {
             </p>
             <div className="flex flex-wrap gap-3">
                 <button className="flex items-center px-4 py-2 text-sm bg-white border border-[#8b87ff] text-[#605bff] rounded-lg hover:bg-[#605bff] hover:text-white transition-colors whitespace-nowrap">
-                  <Play className="w-4 h-4 mr-2 text-[#FF8E1C]" />
+                  <Play className="w-4 h-4 mr-2 text-[#F5A623]" />
                   <span>Watch Demo</span>
                 </button>
                 <button className="flex items-center px-4 py-2 text-sm bg-white border border-[#8b87ff] text-[#605bff] rounded-lg hover:bg-[#605bff] hover:text-white transition-colors whitespace-nowrap">
@@ -123,7 +123,7 @@ const Onboarding: React.FC = () => {
             </div>
             <div className="flex justify-start gap-3">
               <button className="inline-flex items-center px-4 py-2 text-sm bg-white border border-[#8b87ff] text-[#605bff] rounded-lg hover:bg-[#605bff] hover:text-white transition-colors whitespace-nowrap">
-                <Play className="w-4 h-4 mr-2 text-[#FF8E1C]" />
+                <Play className="w-4 h-4 mr-2 text-[#F5A623]" />
                 Watch Demo
               </button>
               <button 
@@ -155,7 +155,7 @@ const Onboarding: React.FC = () => {
             </p>
             <div className="flex justify-start gap-3">
               <button className="inline-flex items-center px-4 py-2 text-sm bg-white border border-[#8b87ff] text-[#605bff] rounded-lg hover:bg-[#605bff] hover:text-white transition-colors whitespace-nowrap">
-                <Play className="w-4 h-4 mr-2 text-[#FF8E1C]" />
+                <Play className="w-4 h-4 mr-2 text-[#F5A623]" />
                 Watch Demo
               </button>
               <button 
@@ -184,7 +184,7 @@ const Onboarding: React.FC = () => {
             </p>
             <div className="flex justify-start gap-3">
               <button className="inline-flex items-center px-4 py-2 text-sm bg-white border border-[#8b87ff] text-[#605bff] rounded-lg hover:bg-[#605bff] hover:text-white transition-colors whitespace-nowrap">
-                <Play className="w-4 h-4 mr-2 text-[#FF8E1C]" />
+                <Play className="w-4 h-4 mr-2 text-[#F5A623]" />
                 Watch Demo
               </button>
               <button 
@@ -214,7 +214,7 @@ const Onboarding: React.FC = () => {
             </p>
             <div className="flex justify-start gap-3">
               <button className="inline-flex items-center px-4 py-2 text-sm bg-white border border-[#8b87ff] text-[#605bff] rounded-lg hover:bg-[#605bff] hover:text-white transition-colors whitespace-nowrap">
-                <Play className="w-4 h-4 mr-2 text-[#FF8E1C]" />
+                <Play className="w-4 h-4 mr-2 text-[#F5A623]" />
                 Watch Demo
               </button>
               <button 
@@ -244,7 +244,7 @@ const Onboarding: React.FC = () => {
             </p>
             <div className="flex justify-start gap-3">
               <button className="inline-flex items-center px-4 py-2 text-sm bg-white border border-[#8b87ff] text-[#605bff] rounded-lg hover:bg-[#605bff] hover:text-white transition-colors whitespace-nowrap">
-                <Play className="w-4 h-4 mr-2 text-[#FF8E1C]" />
+                <Play className="w-4 h-4 mr-2 text-[#F5A623]" />
                 Watch Demo
               </button>
               <button 

@@ -70,7 +70,7 @@ function TaskDashboardPage() {
   const getMeetingTypeIcon = (type: string) => {
     switch (type) {
       case 'Internal':
-        return <Calendar className="w-4 h-4 text-[#FF8E1C]" />;
+        return <Calendar className="w-4 h-4 text-[#F5A623]" />;
       case 'External':
         return <Calendar className="w-4 h-4 text-[#605BFF]" />;
       default:
@@ -151,7 +151,7 @@ function TaskDashboardPage() {
       case 'demo':
         return 'text-[#605BFF]';
       case 'todo':
-        return 'text-[#FF8E1C]';
+        return 'text-[#F5A623]';
       case 'other':
         return 'text-gray-600';
       default:
@@ -500,7 +500,7 @@ const users = ['All Users', 'Sarah Johnson', 'Mike Chen', 'Emily Davis', 'David 
                   <Plus className="w-4 h-4" />
                   <span>New Task</span>
                 </button>
-                <button className="p-2 rounded-lg text-[#FF8E1C] hover:bg-gray-100 transition-colors">
+                <button className="p-2 rounded-lg text-[#F5A623] hover:bg-gray-100 transition-colors">
                   <Filter className="w-5 h-5" />
                 </button>
               </div>
@@ -636,7 +636,7 @@ const users = ['All Users', 'Sarah Johnson', 'Mike Chen', 'Emily Davis', 'David 
                   <Plus className="w-4 h-4" />
                   <span>Schedule Meeting</span>
                 </button>
-                <button className="p-2 rounded-lg text-[#FF8E1C] hover:bg-gray-100 transition-colors">
+                <button className="p-2 rounded-lg text-[#F5A623] hover:bg-gray-100 transition-colors">
                   <Filter className="w-5 h-5" />
                 </button>
               </div>
@@ -763,7 +763,7 @@ const users = ['All Users', 'Sarah Johnson', 'Mike Chen', 'Emily Davis', 'David 
                   <Plus className="w-4 h-4" />
                   <span>New Session</span>
                 </button>
-                <button className="p-2 rounded-lg text-[#FF8E1C] hover:bg-gray-100 transition-colors">
+                <button className="p-2 rounded-lg text-[#F5A623] hover:bg-gray-100 transition-colors">
                   <Filter className="w-5 h-5" />
                 </button>
               </div>

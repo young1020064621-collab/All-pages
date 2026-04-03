@@ -114,7 +114,7 @@ const MeetingIntelligence: React.FC<MeetingIntelligenceProps> = ({ onNavigate, o
           <div className="flex items-center">
             <div className="flex items-center space-x-2 flex-1">
               <span className="text-gray-700 font-medium">Jul 18, 10:45 - Driving Rapid Revenue Growth</span>
-              <Pencil className="w-4 h-4 text-[#FF8E1C] cursor-pointer hover:bg-gray-100 transition-colors" />
+              <Pencil className="w-4 h-4 text-[#F5A623] cursor-pointer hover:bg-gray-100 transition-colors" />
             </div>
           </div>
         </div>

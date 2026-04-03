@@ -363,7 +363,7 @@ const SharedCalls: React.FC = () => {
             <div className="relative">
               <button 
                 onClick={handleFilterClick}
-                className="flex items-center gap-2 px-3 py-1.5 text-[#FF8E1C] rounded-lg border border-[#FF8E1C] hover:bg-[#FF8E1C] hover:text-white transition-colors"
+                className="flex items-center gap-2 px-3 py-1.5 text-[#F5A623] rounded-lg border border-[#F5A623] hover:bg-[#F5A623] hover:text-white transition-colors"
               >
                 <Filter size={16} />
                 <span className="text-sm font-medium">Filter</span>
@@ -433,7 +433,7 @@ const SharedCalls: React.FC = () => {
                 <option value="emily">Emily Foster</option>
               </select>
             </div>
-            <button className="flex items-center gap-2 px-3 py-1.5 text-[#FF8E1C] rounded-lg hover:bg-gray-100 transition-colors">
+            <button className="flex items-center gap-2 px-3 py-1.5 text-[#F5A623] rounded-lg hover:bg-gray-100 transition-colors">
               <Filter size={16} />
               <span className="text-sm font-medium">Filter</span>
             </button>
@@ -551,7 +551,7 @@ const SharedCalls: React.FC = () => {
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                       <div className="flex items-center space-x-2">
                         <button 
-                          className="px-3 py-1 h-6 w-16 text-xs rounded-md transition-colors bg-[#FF8E1C] text-white hover:bg-orange-600"
+                          className="px-3 py-1 h-6 w-16 text-xs rounded-md transition-colors bg-[#F5A623] text-white hover:bg-orange-600"
                         >
                           Review
                         </button>

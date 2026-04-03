@@ -304,7 +304,7 @@ const Step1: React.FC<Step1Props> = ({ data, updateData }) => {
                   {data.clientCompany && (
                     <Edit2 
                       size={18} 
-                      className="text-gray-400 hover:text-[#FF8E1C] cursor-pointer transition-all duration-200 hover:scale-110"
+                      className="text-gray-400 hover:text-[#F5A623] cursor-pointer transition-all duration-200 hover:scale-110"
                       onClick={() => setShowCreateCompany(true)}
                     />
                   )}
@@ -343,7 +343,7 @@ const Step1: React.FC<Step1Props> = ({ data, updateData }) => {
                   {data.deal && (
                     <Edit2 
                       size={18} 
-                      className="text-gray-400 hover:text-[#FF8E1C] cursor-pointer transition-all duration-200 hover:scale-110"
+                      className="text-gray-400 hover:text-[#F5A623] cursor-pointer transition-all duration-200 hover:scale-110"
                       onClick={() => setShowCreateDeal(true)}
                     />
                   )}

@@ -96,7 +96,7 @@ export function BuyerSection({ onCreateEntry, onSubTabChange, currentPage = 1, i
             Search
           </button>
           <button
-            className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-[#FF8E1C] rounded-lg border border-[#FF8E1C] hover:bg-[#FF8E1C] hover:text-white transition-colors"
+            className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-[#F5A623] rounded-lg border border-[#F5A623] hover:bg-[#F5A623] hover:text-white transition-colors"
           >
             <Filter size={16} />
             <span>Filter</span>

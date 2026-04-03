@@ -324,7 +324,7 @@ const Tasks: React.FC = () => {
             </button>
             
             <button
-              className="flex items-center gap-2 px-3 py-1.5 text-[#FF8E1C] rounded-lg hover:bg-gray-100 transition-colors"
+              className="flex items-center gap-2 px-3 py-1.5 text-[#F5A623] rounded-lg hover:bg-gray-100 transition-colors"
             >
               <Filter size={16} />
               <span className="text-sm font-medium">Filter</span>
@@ -584,7 +584,7 @@ const Tasks: React.FC = () => {
             <div className="relative">
               <button 
                 onClick={handleFilterClick}
-                className="flex items-center gap-2 px-3 py-1.5 text-[#FF8E1C] rounded-lg border border-[#FF8E1C] rounded-lg hover:bg-[#FF8E1C] hover:text-white transition-colors"
+                className="flex items-center gap-2 px-3 py-1.5 text-[#F5A623] rounded-lg border border-[#F5A623] rounded-lg hover:bg-[#F5A623] hover:text-white transition-colors"
               >
                 <Filter size={16} />
                 <span className="text-sm font-medium">Filter</span>

@@ -488,7 +488,7 @@ const AskSamTab: React.FC = () => {
             <button
               onClick={handleSendMessage}
               disabled={!inputValue.trim() || isLoading}
-              className="absolute right-3 bottom-3 p-2 disabled:opacity-50 disabled:cursor-not-allowed text-[#FF8E1C] hover:text-[#4B46CC] transition-colors"
+              className="absolute right-3 bottom-3 p-2 disabled:opacity-50 disabled:cursor-not-allowed text-[#F5A623] hover:text-[#4B46CC] transition-colors"
             >
               <Send className="w-6 h-6" />
             </button>
@@ -498,7 +498,7 @@ const AskSamTab: React.FC = () => {
                 // Handle mic functionality here
                 console.log('Mic clicked');
               }}
-              className="absolute right-12 bottom-3 p-2 text-[#FF8E1C]"
+              className="absolute right-12 bottom-3 p-2 text-[#F5A623]"
             >
               <Mic className="w-6 h-6" />
             </button>*/}

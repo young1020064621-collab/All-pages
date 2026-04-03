@@ -77,9 +77,9 @@ const CoachingTab: React.FC = () => {
             {/* Action Items Card */}
             <div className="bg-white rounded-lg border border-gray-200 p-4">
               <div className="flex items-center space-x-3">
-                <Lightbulb className="w-5 h-5 text-[#FF8E1C]" />
+                <Lightbulb className="w-5 h-5 text-[#F5A623]" />
                 <div>
-                  <div className="text-2xl font-bold text-[#FF8E1C]">12</div>
+                  <div className="text-2xl font-bold text-[#F5A623]">12</div>
                   <div className="text-sm text-gray-600">Action Items</div>
                 </div>
               </div>
